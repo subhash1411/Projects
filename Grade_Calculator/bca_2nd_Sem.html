@@ -1,0 +1,289 @@
+
+<HTML>
+    <HEAD>
+        <TITLT></TITLT>
+        
+        <script>
+            function Cal()
+            {
+                var s1=document.FSEM.ENG.value,s2=document.FSEM.TLG.value,s3=document.FSEM.ICT.value;
+                var s4=document.FSEM.SR.value,s5=document.FSEM.BS.value;
+                var s6=document.FSEM.DS.value,s7=document.FSEM.DSP.value,s8=document.FSEM.PY.value;
+                var s9=document.FSEM.PYP.value,s10=document.FSEM.DBMS.value,s11=document.FSEM.DBMSP.value;
+                var s=(3*parseInt(s1))+(3*parseInt(s2))+(2*parseInt(s3))+(2*parseInt(s4))+(2*parseInt(s5));
+                s+=(4*parseInt(s6))+parseInt(s7)+(4*parseInt(s8))+parseInt(s9)+(4*parseInt(s10))+parseInt(s11);
+                if (s)
+                {
+                    alert("2nd Semister CGPA ="+(s/27));
+                }
+                else
+                {
+                    alert("You are FAIL in Examination  \n                    (OR)\n You Entered Wrong Grades");
+                }
+                
+            }
+        </script>
+
+        <style>
+            .Page_head{
+                padding: 0%;
+                text-align: center;
+                 background-image: radial-gradient(
+                ellipse at center, 
+                rgba(0,33,82,1) 0%, 
+                rgba(0,0,0,1) 100%);
+                color: white;
+                font-size:175%;
+                border: solid;
+                border-color: black;
+                border-radius: 15px;
+            }
+
+            .Page_neck
+            {
+                padding: 2% 5% 2%;
+                 background-image: radial-gradient(
+                ellipse at center, 
+                rgba(0,33,82,1) 0%, 
+                rgba(0,0,0,1) 100%);
+                color: white;
+                font-size:175%;
+                border: solid;
+                border-color: black;
+                border-radius: 15px;
+            }
+
+             
+            #slt{
+                border: double;
+                border-radius: 50px;
+                text-align: center;
+                background-color: #1abc9c;
+            }
+
+            #button {
+                background-color: green; 
+                border-radius: 10px;
+                border-color: #1abc9c;
+                color: black;
+                padding: 8px 3px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-style: italic;
+            }
+
+            #clr{
+                color: white;
+            }
+
+            BODY{
+                background-image: radial-gradient(
+                ellipse at center, 
+                Crimson 0%, 
+                rgba(0,0,0,1) 100%);  
+
+                &:before {
+                    content: none;
+                    left: 0;
+                    position: absolute;
+                    width: 200%;
+                    height: 100%;
+                    background: 
+                    repeating-linear-gradient(
+                        45deg, 
+                        transparent,
+                        transparent 1px, 
+                        rgba(0, 0, 0, .2) 1px, 
+                        rgba(255,255,255, .1) 10px
+                );
+                
+            }
+            }
+        </style>
+
+    </HEAD>
+
+    <BODY>
+
+        <div class="Page_head">
+            <DL>
+                <DT>
+                    <H1><B>GRADE CALCULATOR FOR DEGREE AKNU</B></H1>
+                </DT>
+                <DD>
+                    Grade To CGPA
+                </DD>
+            </DL>
+        </div><BR>
+    
+        <div class="Page_neck">
+
+            <a href="Result_Cal.html" >HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.aknu.edu.in/Exams/results.php" target="_blank">AKNU Results</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Default.html">DEFAULT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Result Cal.html" >About Me</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Result Cal.html" >Login </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Result Cal.html" >Sign Up</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   
+        </div>
+    
+        <H1 align="CENTER" id="clr"><B>BCA II<sup>nd</sup> Semister Subjects</B></H1>
+
+        <FORM name="FSEM" id="fsem" method="post" action="" onsubmit="return Cal()">
+            <H2 id="clr">Select the Grades to Subjects :</H2>
+        <OL>
+            <LI>
+                <H3 id="clr">English :  <select name="ENG" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr">Telugu : <select name="TLG" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr"> Inform. & Comm. Tech.(ICT) :  &nbsp;&nbsp;<select NAME="ICT" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr">Survey and Reporting : <select NAME="SR" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr">Business Communication :  <select NAME="BS" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr">Data Structures :  <select NAME="DS" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+            
+            <LI>
+                <H3 id="clr">Data Structures Practical :  <select NAME="DSP" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr">Intorduction to Python : <select NAME="PY" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr">Intorduction to Python Practical :  <select NAME="PYP" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr">DataBase Management System : <select NAME="DBMS" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr">DBMS Practical :  <select NAME="DBMSP" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+        </OL>&nbsp;&nbsp;
+        <INPUT TYPE="submit" id="button" VALUE="CALCULATE">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <INPUT TYPE="RESET" id="button" VALUE="CLEAR">
+        </FORM>
+
+    </BODY>
+</HTML>
