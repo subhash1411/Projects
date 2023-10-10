@@ -1,0 +1,156 @@
+.Page_head{
+    padding: 0%;
+    text-align: center;
+     background-image: radial-gradient(
+    ellipse at center, 
+    #007bff 0%, 
+    #003366 100%);
+    color: white;
+    font-size:175%;
+    border: solid;
+    border-color: black;
+    border-radius: 15px;
+}
+
+.Page_neck
+{
+    padding: 2% 0% 2%;
+    background-image: radial-gradient(
+    ellipse at center, 
+    #007bff 0%, 
+    #003366 100%);
+    color: white;
+    font-size:175%;
+    border: solid;
+    border-color: black;
+    border-radius: 15px;
+    display: flex;
+}
+.Page_neck_left,.Page_neck_right
+{
+    flex: 50%;
+    padding-left: 30px;
+    
+}
+
+#page_bar
+{
+    color: white;
+    padding-left: 75px;
+}
+ 
+#slt
+{
+    border: double;
+    border-radius: 50px;
+    text-align: center;
+    background-image: radial-gradient(
+    ellipse at center, 
+    #007bff 0%, 
+    #003366 100%);
+}
+
+#button 
+{
+    background-image: radial-gradient(
+    ellipse at center, 
+    #007bff 0%, 
+    #003366 100%);
+    border-radius: 10px;
+    border-color: #1abc9c;
+    color: black;
+    padding: 8px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+
+#clr
+{
+    color: radial-gradient(
+        rgba(0,33,82,1) 0%, 
+    rgba(0,0,0,1) 100%);
+}
+
+#hp{
+    font-size: 30px;
+}
+
+BODY
+{
+    background-image: radial-gradient
+    (
+        white 0%, 
+        rgba(0,0,0,1) 100
+    );  
+
+    &:before 
+    {
+        content: none;
+        left: 0;
+        position: absolute;
+        width: 200%;
+        height: 100%;
+        background: 
+        repeating-linear-gradient
+        (
+            45deg, 
+            transparent,
+            transparent 1px, 
+            rgba(0, 0, 0, .2) 1px, 
+            rgba(255,255,255, .1) 10px
+        );
+    
+    }
+}
+
+.button 
+{
+    background-color: radial-gradient
+    (
+        ellipse at center,
+        #333333 0%, /* Dark Gray */
+        #000000 100% /* Black */
+    );
+    border-radius: 10px;
+    border-color: #1abc9c;
+    color: radial-gradient
+    (
+        ellipse at center,
+        Blue 0%, /* Dark Gray */
+        darkblue 100% /* Black */
+    );
+    padding: 8px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.columns 
+{
+    width: 25%;
+    padding: 10px 50px 10px;
+    border: solid;
+    height: 50%;
+    text-align: center;
+}
+
+.row 
+{
+    content: "";
+    display: flex;
+    background-image: radial-gradient(
+        ellipse at center,
+        #007bff 0%, /* Blue */
+        #003366 100% /* Dark Blue */
+    );
+}
+
+#subjects
+{
+    padding-left: 500px;
+}
