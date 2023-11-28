@@ -1,0 +1,200 @@
+
+<HTML>
+    <HEAD>
+        <title>BCOM(COM) SEM-III</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/Projects/style.css">
+
+        <script>
+
+            //This Function is for Calculating 2nd Sem of BCA
+            function Bcomsem3()
+            {
+                // Accesing Form Values
+                var s1 = document.FORM.ENG.value, s2 = document.FORM.TLG.value;  // English & Telugu
+                var s3 = document.FORM.EE.value, s4 = document.FORM.AS.value, s5 = document.FORM.OB.value; // Environmental Edu, CRT & Online Business
+                var s6 = document.FORM.sub1.value;  // Advanced Accounting
+                var s7 = document.FORM.sub2.value;  // Business Statistics
+                var s8 = document.FORM.sub3.value, s9 = document.FORM.sub3P.value;  // Programming with C & C++& Practical
+
+                //Typecasting & Adding of All the Credits
+                var s = (3*parseInt(s1)) + (3*parseInt(s2));  // English & Telugu
+                    s += (2*parseInt(s3)) + (2*parseInt(s4)) + (2*parseInt(s5));  // Environmental Edu, CRT & Online Business
+                    s += (4*parseInt(s6)) + (4*parseInt(s7)) + (4*parseInt(s8)) + parseInt(s9);  //Main Subjects
+
+                if (s)  // Checking Condtion, If they Fail or Not
+                {
+                    alert("3rd Semister CGPA ="+(s/25));
+                }
+                else
+                {
+                    alert("You are FAIL in Examination  \n                    (OR)\n You Entered Wrong Grades");
+                }
+                
+            }
+        </script>
+    </HEAD>
+
+    <BODY>
+
+        <div class="Page_head">
+            <DL>
+                <DT>
+                    <H1><B>GRADE CALCULATOR FOR DEGREE AKNU</B></H1>
+                </DT>
+                <DD>
+                    Grade To CGPA
+                </DD>
+            </DL>
+        </div><BR>
+    
+        <div class="Page_neck">
+
+            <div class="Page_neck_left">
+                <a href="/Projects/Result_Cal.html" ><b id="page_bar">HOME</b></a>
+                <!--in this link we create aknu results links page-->
+                <a href="https://www.aknu.edu.in/Exams/results.php" target="_blank"><b id="page_bar">AKNU Results</b></a>
+                <a href="Default.html"><b id="page_bar">DEFAULT</b></a>
+            </div>
+
+            <div class="Page_neck_right">
+                <a href="/Projects/Result_Cal.html" ><b id="page_bar">About Me</b></a>
+                <a href="/Projects/Login.html" target="_top"><b id="page_bar">Login</b></a>
+                <a href="/Projects/Result_Cal.html"> <b id="page_bar">Sign Up</b></a>
+            </div>        
+    
+        </div>
+    
+        <H1 align="CENTER" id="clr"><B>BCOM(COM) III<sup>st</sup> Semister Subjects</B></H1>
+
+        <FORM name="FORM" id="subjects" method="put" action="" onsubmit="Bcomsem3()">
+            <H2 id="clr">Select the Grades to Subjects :</H2>
+        <OL>
+            <LI>
+                <H3 id="clr">English :  <select name="ENG" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr">Telugu : <select name="TLG" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr">Environmental Education : <select NAME="EE" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr">Analytical Skills : <select NAME="AS" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr">Online Business : <select NAME="OB" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr">Advanced Accounting :  <select NAME="sub1" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+            
+            <LI>
+                <H3 id="clr">Business statistics: <select NAME="sub2" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            
+
+            <LI>
+                <H3 id="clr">Programming with C & C++ : <select NAME="sub3" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr">Programming with 
+                    <br> C & C++Practical :  <select NAME="sub3P" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+        </OL>&nbsp;&nbsp;
+        <br>
+        <input TYPE="submit" id="button" VALUE="CALCULATE">
+        <input TYPE="RESET" id="button" VALUE="CLEAR">
+        </FORM>
+
+    </BODY>
+</HTML>

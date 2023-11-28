@@ -1,0 +1,174 @@
+
+<HTML>
+    <HEAD>
+        <title>BCOM SEM-IV</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/Projects/style.css">
+
+        <script>
+
+            //This Function is for Calculating 4th Sem of BCA
+        function Bcomsem4()
+        {
+            // Accesing Form Values
+            var s1 = document.FORM.CA.value, s2 = document.FORM.CMA.value;  // Corporate Accounting  &  Cost and Management Accounting
+            var s3 = document.FORM.IT.value, s4 = document.FORM.BL.value;  // Income Tax & Business Law
+            var s5 = document.FORM.A.value;   // Auditing
+            var s6 = document.FORM.DBMS.value, s7 = document.FORM.DBMSP.value;  // Database Management System & Practical
+        
+
+            //Typecasting & Adding of All the Credits
+            var s = (4*parseInt(s1)) + (4*parseInt(s2));  //  Corporate Accounting  &  Cost and Management Accounting
+                s += (4*parseInt(s3)) + (4*parseInt(s4));  // Income Tax & Business Law
+                s += (4*parseInt(s5)) + (4*parseInt(s6)) + parseInt(s7);  // Auditing & Database Management System & Practical
+
+
+            if (s)  // Checking Condtion, If they Fail or Not
+            {
+                alert("4th Semister CGPA ="+(s/25));
+            }
+            else
+            {
+                alert("You are FAIL in Examination  \n                    (OR)\n You Entered Wrong Grades");
+            }
+            
+        }
+        </script>
+    </HEAD>
+
+    <BODY>
+
+        <div class="Page_head">
+            <DL>
+                <DT>
+                    <H1><B>GRADE CALCULATOR FOR DEGREE AKNU</B></H1>
+                </DT>
+                <DD>
+                    Grade To CGPA
+                </DD>
+            </DL>
+        </div><BR>
+    
+        <div class="Page_neck">
+
+            <div class="Page_neck_left">
+                <a href="/Projects/Result_Cal.html" ><b id="page_bar">HOME</b></a>
+                <!--in this link we create aknu results links page-->
+                <a href="https://www.aknu.edu.in/Exams/results.php" target="_blank"><b id="page_bar">AKNU Results</b></a>
+                <a href="Default.html"><b id="page_bar">DEFAULT</b></a>
+            </div>
+
+            <div class="Page_neck_right">
+                <a href="/Projects/Result_Cal.html" ><b id="page_bar">About Me</b></a>
+                <a href="/Projects/Login.html" target="_top"><b id="page_bar">Login</b></a>
+                <a href="/Projects/Result_Cal.html" ><b id="page_bar">Sign Up</b></a>
+            </div>
+   
+        </div>
+    
+        <H1 align="CENTER" id="clr"><B>BCOM IV<sup>th</sup> Semister Subjects</B></H1>
+
+        <FORM name="FORM" id="subjects" method="put" action="" onsubmit="Bcomsem4()">
+            <H2 id="clr">Select the Grades to Subjects :</H2>
+        <OL>
+
+            <LI>
+                <H3 id="clr">Corporate Accounting :  <select NAME="CA" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+            
+
+            <LI>
+                <H3 id="clr">Cost and Management<br>Accounting : <select NAME="CMA" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr">Income Tax : <select NAME="IT" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr">Business Law :
+                    <select NAME="BL" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr">Auditing : <select NAME="A" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr">Data Base Management<br>System : <select NAME="DBMS" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr">Data Base Management<br>System  Practical : <select NAME="DBMSP" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+        </OL>&nbsp;&nbsp;
+        <INPUT TYPE="submit" id="button" VALUE="CALCULATE">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <INPUT TYPE="RESET" id="button" VALUE="CLEAR">
+        </FORM>
+
+    </BODY>
+</HTML>
