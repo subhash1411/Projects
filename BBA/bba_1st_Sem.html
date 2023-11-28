@@ -1,0 +1,173 @@
+<HTML>
+    <HEAD>
+        <title>BBA SEM-I</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1 ">
+        <link rel="stylesheet" href="/Projects/style.css">
+        <script>
+
+            function result()
+            {
+            // Accesing Form Values
+           
+            var s1 = document.FORM.ENG.value, s2 = document.FORM.TLG.value ;  // English & Telugu
+            var s3 = document.FORM.IP.value, s4 = document.FORM.EA.value ;  //  Enterpreneurship & Insurance Promotion
+            var s5 = document.FORM.POM.value ; // Principles of Management
+            var s7 = document.FORM.ME.value ; // Managerial Economics
+            var s9 = document.FORM.QMM.value ; // Quantitative Methods for Managers
+
+            //Typecasting & Adding of All the Credits
+            var s = (3*parseInt(s1)) + (3*parseInt(s2));  // English & Telugu
+                s += (2*parseInt(s3)) + (2*parseInt(s4));  // Enterpreneurship & Insurance Promotion
+                s += (4*parseInt(s5)) + (4*parseInt(s7)) + (4*parseInt(s9)) ;  //Core Subjects
+        
+            if (s)  // Checking Condtion, If they Fail or Not
+            {
+                alert("1st Semister CGPA ="+(s/22));
+            }
+            else
+            {
+                alert("You are FAIL in Examination  \n                    (OR)\n You Entered Wrong Grades");
+            }
+            }
+        </script>
+
+    </HEAD>
+
+    <BODY>
+
+        <div class="Page_head">
+            <DL>
+                <DT>
+                    <H1><B>GRADE CALCULATOR FOR DEGREE AKNU</B></H1>
+                </DT>
+                <DD>
+                    Grade To CGPA
+                </DD>
+            </DL>
+        </div><BR>
+    
+        <div class="Page_neck">
+
+            <div class="Page_neck_left">
+                <a href="/Projects/Result_Cal.html" ><b id="page_bar">HOME</b></a>
+                <!--in this link we create aknu results links page-->
+                <a href="https://www.aknu.edu.in/Exams/results.php" target="_blank"><b id="page_bar">AKNU Results</b></a>
+                <a href="Default.html"><b id="page_bar">DEFAULT</b></a>
+            </div>
+
+            <div class="Page_neck_right">
+                <a href="/Projects/Result_Cal.html" ><b id="page_bar">About Me</b></a>
+                <a href="/Projects/Login.html" target="_top"><b id="page_bar">Login</b></a>
+                <a href="/Projects/Result_Cal.html" ><b id="page_bar">Sign Up</b></a>
+            </div>        
+    
+        </div>
+    
+        <H1 align="CENTER" id="clr"><B>BBA I<sup>st</sup> Semister Subjects</B></H1>
+
+        <FORM name="FORM" id="subjects" method="put" action="" onsubmit="result()">
+            <H2 id="clr">Select the Grades to Subjects :</H2>
+        <OL>
+            <LI>
+                <H3 id="clr">English :  <select name="ENG" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr">Telugu : <select name="TLG" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr">Enterpreneurship Development :  <select NAME="EA" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr">Insurance Promotion : <select NAME="IP" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+            <LI>
+                <H3 id="clr">Principles of Management :  <select NAME="POM" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+            
+
+            <LI>
+                <H3 id="clr">Managerial Economics : <select NAME="ME" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+
+            <LI>
+                <H3 id="clr">Quantitative Methods for Managers: <select NAME="QMM" id="slt" size="1" required>
+                    <option value=10>O</option>
+                    <option value=9>A+</option>
+                    <option value=8>A</option>
+                    <option value=7>B+</option>
+                    <option value=6>B</option>
+                    <option value=5>C</option>
+                    <option value=4>D</option>
+                    <option value="F">F</option>
+                </select></H3>
+            </LI>
+
+
+        </OL>&nbsp;&nbsp;
+        <br>
+        <input TYPE="submit" id="button" VALUE="CALCULATE">
+        <input TYPE="RESET" id="button" VALUE="CLEAR">
+        </FORM>
+
+    </BODY>
+    
+</HTML>
